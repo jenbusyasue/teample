@@ -9,6 +9,22 @@
     <link rel="stylesheet" href="./resources_sjm/css/index_css.css">
 
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        hr{
+            height: 1px;
+            background-color: black;
+            border: none;
+        }
+
+        .container > div{
+            padding-bottom: 70px;
+        }
+
+        /* <!-- 이미지 및 텍스트 --> */
         .main-img{
             position: relative;
         }
@@ -21,10 +37,81 @@
             font-size: 25px;
         }
 
+        /* <!-- 사업 소개 --> */
         .business_complain{
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        .business_complain h5{
+            font-weight: normal;
+        }
+
+        /* <!-- 사업 종류 --> */
+
+        .business_card{
+            display: flex;
+            justify-content: center;
+        }
+        .card-part{
+            position: relative;
+        }
+
+        .card-text-top{
+            position: absolute;
+            width: 100%;
+            top: 10px;
+        } 
+
+        .card-text-bottom{
+            position: absolute;
+            width: 100%;
+            bottom: 1px;
+        }
+
+        /* <!-- <!-- 소식 --> --> */
+        .story{
+            display: flex;
+            justify-content: center;
+        }
+
+        .story-left{
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+
+            padding-top: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 15px;
+        }
+
+        .story-left img{
+            padding-bottom: 10px;
+        }
+
+        .story-left p{
+            padding-bottom: 10px;
+        }
+
+        .story-right{
+            width: 40%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .story-right > div{
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .story-right p{
+            padding-top: 15px;
+            padding-bottom: 15px;
         }
     </style>
 
@@ -33,25 +120,8 @@
 
     <!-- 최 외곽 -->
     <div class="container">
-        <!-- 공용 레이어(top) -->
-        <div class="navigation">
-            <img width="150px" src="https://pds.saramin.co.kr/company/logo/202307/25/rybs5n_b48i-1mq885e_logo.jpg">
-            
-            <div class="menu">
-                <a href="">계룡소개</a>
-                <a href="">투자정보</a>
-                <a href="">사업영역</a>
-                <a href="">지속가능경영</a>
-                <a href="">E-PS</a>
-                <a href="">채용안내</a>
-                <a href="">홍보센터</a>
-                <a href="">ENG</a>
-            </div>
-        </div>
-
-        <!-- body -->
+        <!-- body(navigation의 가려지는 것을 방지) -->
         <div class="body">
-
             <!-- 이미지 및 텍스트 -->
             <div class="main-img">
                 <img 
@@ -69,51 +139,166 @@
 
         <!-- 사업 소개 -->
         <div class="business_complain">
-            <span>우리가 꿈구는 미래를 건설합니다.</span>
-            <hr>
-            <span>OUR BUSINESS</span>
-            <span>4차 산업혁명 시대에 필요한 선진기술 도입, 자체 기술 개발, 
+            <span style="font-size: 23px; font-weight: bold;">
+                우리가 꿈구는 미래를 건설합니다.
+            </span>
+            <hr style="width: 30px; height: 4px; background-color: blue;">
+            <span style="font-weight: bold; padding-top: 10px; padding-bottom: 10px; font-size: 15px;">OUR BUSINESS</span>
+            <h5>4차 산업혁명 시대에 필요한 선진기술 도입, 자체 기술 개발, 
                 그리고 우수 인재를 보유하여 건축, 토목, 주택, 플랜트 등 
-                지속적인 사업영역의 확장을 통해 초일류기업으로 도약하고자 합니다.</span>
+            </h5>
+            <h5>
+                지속적인 사업영역의 확장을 통해 초일류기업으로 도약하고자 합니다.
+            </h5>
         </div>
 
+        <!-- 사업 종류(5개) -->
         <div class="business_card">
-            <img src="">
+            <div class="card-part">
+                <img src="https://via.placeholder.com/186x258">
+                <div class="card-text-top">
+                    <h6>대전 베이스볼드림파크</h6>
+                </div>
+                <div class="card-text-bottom">
+                    <h3 class="card-text">건축</h3>
+                    <h6 class="card-text">새로운 역사와 문화를 창조합니다.</h6>
+                </div>
+            </div>
+            <div class="card-part">
+                <img src="https://via.placeholder.com/186x258">
+                <div class="card-text-top">
+                    <h6>대전 베이스볼드림파크</h6>
+                </div>
+                <div class="card-text-bottom">
+                    <h3 class="card-text">건축</h3>
+                    <h6 class="card-text">새로운 역사와 문화를 창조합니다.</h6>
+                </div>
+            </div>
+            <div class="card-part">
+                <img src="https://via.placeholder.com/186x258">
+                <div class="card-text-top">
+                    <h6>대전 베이스볼드림파크</h6>
+                </div>
+                <div class="card-text-bottom">
+                    <h3 class="card-text">건축</h3>
+                    <h6 class="card-text">새로운 역사와 문화를 창조합니다.</h6>
+                </div>
+            </div>
+            <div class="card-part">
+                <img src="https://via.placeholder.com/186x258">
+                <div class="card-text-top">
+                    <h6>대전 베이스볼드림파크</h6>
+                </div>
+                <div class="card-text-bottom">
+                    <h3 class="card-text">건축</h3>
+                    <h6 class="card-text">새로운 역사와 문화를 창조합니다.</h6>
+                </div>
+            </div>
+            <div class="card-part">
+                <img src="https://via.placeholder.com/186x258">
+                <div class="card-text-top">
+                    <h6>대전 베이스볼드림파크</h6>
+                </div>
+                <div class="card-text-bottom">
+                    <h3 class="card-text">건축</h3>
+                    <h6 class="card-text">새로운 역사와 문화를 창조합니다.</h6>
+                </div>
+            </div>
         </div>
 
-        <!-- last layer -->
-        <div class="complain">
-            <div>
-                <p>CONTACT US</p>
-                <p><img 
-                    width="150px"
-                    src="https://pds.saramin.co.kr/company/logo/202307/25/rybs5n_b48i-1mq885e_logo.jpg"></p>
+        <hr>
+
+        <!-- 소식 -->
+        <div class="story">
+            <div class="story-left">
+                <img width="auto" src="https://via.placeholder.com/555x330">
+                <p>사회공헌</p>
                 <span>
-                    <h4 style="color: blue; display: inline;">Tel</h4>
-                    :042-480-7114
+                    계룡건설은 모두가 더 나은 미래를 살아갈 수 있도록 지속적인 사회공헌을 통해 지역 
+                </span>
+                <span style="margin-bottom: 5px;">
+                    주민과 함께 소통하며 행복을 나누고, 삶의 질 향상에 기여하고자 합니다.
                 </span>
                 <span>
-                    <h4 style="color: blue; display: inline;">Fax</h4>
-                    :042-486-1615
+                    또한 계룡장학재단과 함께 미래세대를 위해 장학금 지급, 유림공원 사생대회, 
                 </span>
-                <span>대전광역시 서구 문정로 48번길, 48</span>
+                <span>
+                    도시건축여행, 아이디어 공모전 등 다양한 사회공헌 프로그램을 제공합니다.
+                </span>
             </div>
-            <div>
-                <p>QUICK MENU</p>
-                <span> * 인트라넷</span>
-                <span> * e-PS </span>
-                <span> * 개인정보처리방침</span>
-                <span> * 채용정보 </span>
-                <span> * 오시는 길</span>
-            </div>
-            <div>
-                <p>LINK</p>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="story-right">
+                <div>
+                    <img width="auto" src="https://via.placeholder.com/262x154">
+                    <p>창립50주년 기념 책자 - 50 STEPS</p>
+                    <span>새로운 미래를 그려가는 계룡의 이야기</span>
+                </div>
+                <div>
+                    <img width="auto" src="https://via.placeholder.com/262x154">
+                    <p>창립50주년 기념 책자 - 50 STEPS</p>
+                    <span>새로운 미래를 그려가는 계룡의 이야기</span>
+                </div>
+                <div>
+                    <img width="auto" src="https://via.placeholder.com/262x154">
+                    <p>창립50주년 기념 책자 - 50 STEPS</p>
+                    <span>새로운 미래를 그려가는 계룡의 이야기</span>
+                </div>
+                <div>
+                    <img width="auto" src="https://via.placeholder.com/262x154">
+                    <p>창립50주년 기념 책자 - 50 STEPS</p>
+                    <span>새로운 미래를 그려가는 계룡의 이야기</span>
+                </div>
             </div>
         </div>
-        <div class="last">© COPYRIGHT 2016. KYERYONG CONSTRUCTION INDUSTRIAL CO., LTD. ALL RIGHTS RESERVED.</div>
     </div>
+
+    <!-- 공용 레이어(navigation) -->
+    <div class="navigation">
+        <img width="150px" src="https://pds.saramin.co.kr/company/logo/202307/25/rybs5n_b48i-1mq885e_logo.jpg">
+        
+        <div class="menu">
+            <a href="">계룡소개</a>
+            <a href="">투자정보</a>
+            <a href="">사업영역</a>
+            <a href="">지속가능경영</a>
+            <a href="">E-PS</a>
+            <a href="">채용안내</a>
+            <a href="">홍보센터</a>
+            <a href="">ENG</a>
+        </div>
+    </div>
+
+    <!-- last layer -->
+    <div class="complain">
+        <div>
+            <p>CONTACT US</p>
+            <p><img 
+                width="150px"
+                src="https://pds.saramin.co.kr/company/logo/202307/25/rybs5n_b48i-1mq885e_logo.jpg"></p>
+            <span>
+                <h4 style="color: blue; display: inline;">Tel</h4>
+                :042-480-7114
+            </span>
+            <span>
+                <h4 style="color: blue; display: inline;">Fax</h4>
+                :042-486-1615
+            </span>
+            <span>대전광역시 서구 문정로 48번길, 48</span>
+        </div>
+        <div>
+            <p>QUICK MENU</p>
+            <span> * 인트라넷</span>
+            <span> * e-PS </span>
+            <span> * 개인정보처리방침</span>
+            <span> * 채용정보 </span>
+            <span> * 오시는 길</span>
+        </div>
+        <div>
+            <p>LINK</p>
+            <img src="https://via.placeholder.com/120x75" alt="">
+            <img src="https://via.placeholder.com/120x75" alt="">
+            <img src="https://via.placeholder.com/120x75" alt="">
+        </div>
+    </div>
+    <div class="last">© COPYRIGHT 2016. KYERYONG CONSTRUCTION INDUSTRIAL CO., LTD. ALL RIGHTS RESERVED.</div>
 </body>
 </html>

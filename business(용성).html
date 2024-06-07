@@ -14,7 +14,7 @@
         }
 
         div {
-            border: 0;
+            border: 0.5px solid red;
         }
 
         .banner img {
@@ -168,7 +168,17 @@
             z-index: 1;
         }
 
+        li img .text{
+            text-align: left;
+            color: red;
+            z-index: 1;
+            
+            
 
+        }
+        li img{
+            height: 50%;
+        }
         /* 아이콘 이미지 */
         .icon img {
             display: flex;
@@ -180,6 +190,11 @@
         .icon-list {
             display: flex;
             justify-content: center;
+        }
+        i span{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
         }
         /* foot img */
         .foot>img {
@@ -235,46 +250,46 @@
                             <br>
                             <br>
                         </div>
-                        <div class="slider">
+                        <!-- <div class="slider">
                             <input type="radio" name="slide" id="slide1" checked>
                             <input type="radio" name="slide" id="slide2">
                             <input type="radio" name="slide" id="slide3">
                             <input type="radio" name="slide" id="slide4">
                             <ul id="imgholder" class="imgs">
-                                <li><img src="./resources/img/header/b1_1.jpg"><span>한국은행 통합별관</span></li>
-                                <li><img src="./resources/img/header/b1_2.jpg"><span>대전 베이스볼 드림파크</span></li>
-                                <li><img src="./resources/img/header/b1_3.jpg"><span>안성 바우덕이 휴게소</span></li>
-                                <li><img src="./resources/img/header/b1_4.jpg"><span>강릉 아이스 아레나</span></li>
+                                <li><img src="./resources/img/header/b1_1.jpg"><div class="text">한국은행 통합별관</div></li>
+                                <li><img src="./resources/img/header/b1_2.jpg"><div class="text">대전 베이스볼 드림파크</div></li>
+                                <li><img src="./resources/img/header/b1_3.jpg"><div class="text">안성 바우덕이 휴게소</div></li>
+                                <li><img src="./resources/img/header/b1_4.jpg"><div class="text">강릉 아이스 아레나</div></li>
                             </ul>
                             <div class="bullets">
                                 <label for="slide1">&nbsp;</label>
                                 <label for="slide2">&nbsp;</label>
                                 <label for="slide3">&nbsp;</label>
                                 <label for="slide4">&nbsp;</label>
-                            </div>
+                            </div> -->
                             <br><br>
                             <div class="icon">
                                 <div class="icon-list">
-                                    <i>
+                                    <div>
                                         <img src="./resources/img/icon/건물.png" alt="">
-                                        <span>공공건물</span>
-                                    </i>
-                                    <i>
+                                        <div>공공건물</div>
+                                    </div>
+                                    <div>
                                         <img src="./resources/img/icon/휴양.png" alt="">
-                                        <span>상업빌딩.휴게시설</span>
-                                    </i>
-                                    <i>
+                                        <div>상업빌딩.휴게시설</div>
+                                    </div>
+                                    <div>
                                         <img src="./resources/img/icon/교육.png" alt="">
-                                        <span>교육.의료시설</span>
-                                    </i>
-                                    <i><img src="./resources/img/icon/스포츠.png" alt="">
-                                        <span>문화.스포츠시설</span>
-                                    </i>
+                                        <div>교육.의료시설</div>
+                                    </div>
+                                    <div><img src="./resources/img/icon/스포츠.png" alt="">
+                                        <div>문화.스포츠시설</div>
+                                    </div>
 
-                                    <i>
+                                    <div>
                                         <img src="./resources/img/icon/공공.png" alt="">
-                                        <span>공공주택</span>
-                                    </i>
+                                        <div>공공주택</div>
+                                    </div>
                                 </div>
 
 

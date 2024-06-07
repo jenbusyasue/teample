@@ -14,13 +14,35 @@
             padding: 0;
         }
 
+        div{
+            border: 1px solid black;
+            position: relative;
+        }
+
+        span{
+            display: block;
+            width: auto;
+        }
+
+        .complain p{
+            font-weight: bold;
+        }
+
         hr{
             height: 1px;
             background-color: black;
             border: none;
         }
 
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 55px;
+        }
+
         .container > div{
+            width: 60%;
             padding-bottom: 70px;
         }
 
@@ -35,6 +57,12 @@
             left: 5%;
             color: white;
             font-size: 25px;
+        }
+
+        .img-text h6{
+            font-weight: normal;
+
+            margin-top: 40px;
         }
 
         .line-margin{
@@ -57,6 +85,8 @@
         .business_card{
             display: flex;
             justify-content: center;
+            width: 100%;
+            height: 100%;
         }
         .card-part{
             position: relative;
@@ -346,135 +376,141 @@
 
 </head>
 <body>
-
     <!-- 최 외곽 -->
     <div class="container">
-        <!-- body(navigation의 가려지는 것을 방지) -->
-        <div class="body">
-            <!-- 이미지 및 텍스트 -->
-            <div class="main-img">
-                <img 
-                width="100%"
-                src=".\resources_sjm\images\main_img1.png">
-                
-                <div class="img-text">
-                    <span>한국은행 통합별관</span>
-                    <h1>360' 건설 토털솔루션의 도약</h1>
-                    <span>대한민국 종합은행 건물에 대한 100년만의 리노베이션 프로젝트</span>
-                    <span>프리콘(Pre-Con) 서비스 등 스마트 기술로 건설 부문의 새로운 혁신을 이러갑니다.</span>
-                </div>
+        <!-- 이미지 및 텍스트 -->
+        <div class="main-img">
+            <img 
+            width="100%"
+            src=".\resources_sjm\images\main_img1.png">
+            
+            <div class="img-text">
+                <span>한국은행 통합별관</span>
+                <h1>360' 건설 토털솔루션의 도약</h1>
+                <h6>
+                    대한민국 종합은행 건물에 대한 100년만의 리노베이션 프로젝트프리콘(Pre-Con) 
+                    <br>
+                    서비스 등 스마트 기술로 건설 부문의 새로운 혁신을 이러갑니다.
+                </h6>
             </div>
         </div>
 
         <!-- 사업 소개 -->
-        <div class="business_complain">
-            <span class="line-margin" style="font-size: 23px; font-weight: bold;">
-                우리가 꿈구는 미래를 건설합니다.
-            </span>
-            <hr class="line-margin" style="width: 30px; height: 4px; background-color: blue;">
-            <span class="line-margin" style="font-weight: bold; font-size: 15px;">OUR BUSINESS</span>
-            <h5 class="line-margin">4차 산업혁명 시대에 필요한 선진기술 도입, 자체 기술 개발, 
-                그리고 우수 인재를 보유하여 건축, 토목, 주택, 플랜트 등 
-            </h5>
-            <h5>
-                지속적인 사업영역의 확장을 통해 초일류기업으로 도약하고자 합니다.
-            </h5>
-        </div>
-
-        <!-- 사업 종류(5개) -->
-        <div class="business_card">
-            <div class="card-part">
-                <img src="https://via.placeholder.com/185x260">
-                <div class="card-text-top">
-                    <h6>대전 베이스볼드림파크</h6>
-                </div>
-                <div class="card-text-bottom">
-                    <h3 class="card-text">건축</h3>
-                    <h6 class="card-text">새로운 역사와 문화를 창조합니다.</h6>
-                </div>
-            </div>
-            <div class="card-part">
-                <img src="https://via.placeholder.com/185x260">
-                <div class="card-text-top">
-                    <h6>대전 베이스볼드림파크</h6>
-                </div>
-                <div class="card-text-bottom">
-                    <h3 class="card-text">건축</h3>
-                    <h6 class="card-text">새로운 역사와 문화를 창조합니다.</h6>
-                </div>
-            </div>
-            <div class="card-part">
-                <img src="https://via.placeholder.com/185x260">
-                <div class="card-text-top">
-                    <h6>대전 베이스볼드림파크</h6>
-                </div>
-                <div class="card-text-bottom">
-                    <h3 class="card-text">건축</h3>
-                    <h6 class="card-text">새로운 역사와 문화를 창조합니다.</h6>
-                </div>
-            </div>
-            <div class="card-part">
-                <img src="https://via.placeholder.com/185x260">
-                <div class="card-text-top">
-                    <h6>대전 베이스볼드림파크</h6>
-                </div>
-                <div class="card-text-bottom">
-                    <h3 class="card-text">건축</h3>
-                    <h6 class="card-text">새로운 역사와 문화를 창조합니다.</h6>
-                </div>
-            </div>
-            <div class="card-part">
-                <img src="https://via.placeholder.com/185x260">
-                <div class="card-text-top">
-                    <h6>대전 베이스볼드림파크</h6>
-                </div>
-                <div class="card-text-bottom">
-                    <h3 class="card-text">건축</h3>
-                    <h6 class="card-text">새로운 역사와 문화를 창조합니다.</h6>
-                </div>
+        <div>
+            <div class="business_complain">
+                <span class="line-margin" style="font-size: 23px; font-weight: bold;">
+                    우리가 꿈구는 미래를 건설합니다.
+                </span>
+                <hr class="line-margin" style="width: 30px; height: 4px; background-color: blue;">
+                <span class="line-margin" style="font-weight: bold; font-size: 15px;">OUR BUSINESS</span>
+                <h5 class="line-margin">4차 산업혁명 시대에 필요한 선진기술 도입, 자체 기술 개발, 
+                    그리고 우수 인재를 보유하여 건축, 토목, 주택, 플랜트 등 
+                </h5>
+                <h5>
+                    지속적인 사업영역의 확장을 통해 초일류기업으로 도약하고자 합니다.
+                </h5>
             </div>
         </div>
 
-        <hr>
+        <div>
 
-        <!-- 소식 -->
-        <div class="story">
-            <div class="story-left">
-                <img width="auto" src="https://via.placeholder.com/555x330">
-                <p>사회공헌</p>
-                <span>
-                    계룡건설은 모두가 더 나은 미래를 살아갈 수 있도록 지속적인 사회공헌을 통해 지역 
-                </span>
-                <span style="margin-bottom: 5px;">
-                    주민과 함께 소통하며 행복을 나누고, 삶의 질 향상에 기여하고자 합니다.
-                </span>
-                <span>
-                    또한 계룡장학재단과 함께 미래세대를 위해 장학금 지급, 유림공원 사생대회, 
-                </span>
-                <span>
-                    도시건축여행, 아이디어 공모전 등 다양한 사회공헌 프로그램을 제공합니다.
-                </span>
+            <!-- 사업 종류(5개) -->
+            <div class="business_card">
+                <div class="card-part">
+                    <img src="https://via.placeholder.com/185x260">
+                    <div class="card-text-top">
+                        <h6>대전 베이스볼드림파크</h6>
+                    </div>
+                    <div class="card-text-bottom">
+                        <h3 class="card-text">건축</h3>
+                        <h6 class="card-text">새로운 역사와 문화를 창조합니다.</h6>
+                    </div>
+                </div>
+                <div class="card-part">
+                    <img src="https://via.placeholder.com/185x260">
+                    <div class="card-text-top">
+                        <h6>대전 베이스볼드림파크</h6>
+                    </div>
+                    <div class="card-text-bottom">
+                        <h3 class="card-text">건축</h3>
+                        <h6 class="card-text">새로운 역사와 문화를 창조합니다.</h6>
+                    </div>
+                </div>
+                <div class="card-part">
+                    <img src="https://via.placeholder.com/185x260">
+                    <div class="card-text-top">
+                        <h6>대전 베이스볼드림파크</h6>
+                    </div>
+                    <div class="card-text-bottom">
+                        <h3 class="card-text">건축</h3>
+                        <h6 class="card-text">새로운 역사와 문화를 창조합니다.</h6>
+                    </div>
+                </div>
+                <div class="card-part">
+                    <img src="https://via.placeholder.com/185x260">
+                    <div class="card-text-top">
+                        <h6>대전 베이스볼드림파크</h6>
+                    </div>
+                    <div class="card-text-bottom">
+                        <h3 class="card-text">건축</h3>
+                        <h6 class="card-text">새로운 역사와 문화를 창조합니다.</h6>
+                    </div>
+                </div>
+                <div class="card-part">
+                    <img src="https://via.placeholder.com/185x260">
+                    <div class="card-text-top">
+                        <h6>대전 베이스볼드림파크</h6>
+                    </div>
+                    <div class="card-text-bottom">
+                        <h3 class="card-text">건축</h3>
+                        <h6 class="card-text">새로운 역사와 문화를 창조합니다.</h6>
+                    </div>
+                </div>
             </div>
-            <div class="story-right">
-                <div>
-                    <img width="auto" src="https://via.placeholder.com/262x154">
-                    <p>창립50주년 기념 책자 - 50 STEPS</p>
-                    <span>새로운 미래를 그려가는 계룡의 이야기</span>
+    
+            <hr>
+        </div>
+
+        <div>
+            <!-- 소식 -->
+            <div class="story">
+                <div class="story-left">
+                    <img width="auto" src="https://via.placeholder.com/555x330">
+                    <p>사회공헌</p>
+                    <span>
+                        계룡건설은 모두가 더 나은 미래를 살아갈 수 있도록 지속적인 사회공헌을 통해 지역 
+                    </span>
+                    <span style="margin-bottom: 5px;">
+                        주민과 함께 소통하며 행복을 나누고, 삶의 질 향상에 기여하고자 합니다.
+                    </span>
+                    <span>
+                        또한 계룡장학재단과 함께 미래세대를 위해 장학금 지급, 유림공원 사생대회, 
+                    </span>
+                    <span>
+                        도시건축여행, 아이디어 공모전 등 다양한 사회공헌 프로그램을 제공합니다.
+                    </span>
                 </div>
-                <div>
-                    <img width="auto" src="https://via.placeholder.com/262x154">
-                    <p>창립50주년 기념 책자 - 50 STEPS</p>
-                    <span>새로운 미래를 그려가는 계룡의 이야기</span>
-                </div>
-                <div>
-                    <img width="auto" src="https://via.placeholder.com/262x154">
-                    <p>창립50주년 기념 책자 - 50 STEPS</p>
-                    <span>새로운 미래를 그려가는 계룡의 이야기</span>
-                </div>
-                <div>
-                    <img width="auto" src="https://via.placeholder.com/262x154">
-                    <p>창립50주년 기념 책자 - 50 STEPS</p>
-                    <span>새로운 미래를 그려가는 계룡의 이야기</span>
+                <div class="story-right">
+                    <div>
+                        <img width="auto" src="https://via.placeholder.com/262x154">
+                        <p>창립50주년 기념 책자 - 50 STEPS</p>
+                        <span>새로운 미래를 그려가는 계룡의 이야기</span>
+                    </div>
+                    <div>
+                        <img width="auto" src="https://via.placeholder.com/262x154">
+                        <p>창립50주년 기념 책자 - 50 STEPS</p>
+                        <span>새로운 미래를 그려가는 계룡의 이야기</span>
+                    </div>
+                    <div>
+                        <img width="auto" src="https://via.placeholder.com/262x154">
+                        <p>창립50주년 기념 책자 - 50 STEPS</p>
+                        <span>새로운 미래를 그려가는 계룡의 이야기</span>
+                    </div>
+                    <div>
+                        <img width="auto" src="https://via.placeholder.com/262x154">
+                        <p>창립50주년 기념 책자 - 50 STEPS</p>
+                        <span>새로운 미래를 그려가는 계룡의 이야기</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -651,22 +687,6 @@
         </div>
     </div>
 
-    <!-- 공용 레이어(navigation) -->
-    <div class="navigation">
-        <img width="150px" src="https://pds.saramin.co.kr/company/logo/202307/25/rybs5n_b48i-1mq885e_logo.jpg">
-        
-        <div class="menu">
-            <a href="">계룡소개</a>
-            <a href="">투자정보</a>
-            <a href="">사업영역</a>
-            <a href="">지속가능경영</a>
-            <a href="">E-PS</a>
-            <a href="">채용안내</a>
-            <a href="">홍보센터</a>
-            <a href="">ENG</a>
-        </div>
-    </div>
-
     <!-- last layer -->
     <div class="complain">
         <div>
@@ -699,6 +719,44 @@
             <img src="https://via.placeholder.com/120x75" alt="">
         </div>
     </div>
+
+    <!-- 공용 레이어(navigation) -->
+    <div class="navigation">
+        <img width="150px" src="https://pds.saramin.co.kr/company/logo/202307/25/rybs5n_b48i-1mq885e_logo.jpg">
+        
+        <div class="menu">
+            <div class="menu-each">
+                <a href="">계룡소개</a>
+                <div>
+                    <a href="">인사말</a>
+                    <a href="">연혁</a>
+                    <a href="">오시는길</a>
+                </div>
+            </div>
+            <div>
+                <a href="">투자정보</a>
+            </div>
+            <div>
+                <a href="">사업영역</a>
+            </div>
+            <div>
+                <a href="">지속가능경영</a>
+            </div>
+            <div>
+                <a href="">E-PS</a>
+            </div>
+            <div>
+                <a href="">채용안내</a>
+            </div>
+            <div>
+                <a href="">홍보센터</a>
+            </div>
+            <div>
+                <a href="">ENG</a>
+            </div>
+        </div>
+    </div>
+    
     <div class="last">© COPYRIGHT 2016. KYERYONG CONSTRUCTION INDUSTRIAL CO., LTD. ALL RIGHTS RESERVED.</div>
 </body>
 </html>

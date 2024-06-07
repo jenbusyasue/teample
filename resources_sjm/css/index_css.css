@@ -1,17 +1,4 @@
 /* 고정 layer */
-div{
-    border: 1px solid black;
-    position: relative;
-}
-
-p{
-    font-weight: bold;
-}
-
-span{
-    display: block;
-    width: auto;
-}
 
 .navigation{
     position: fixed;
@@ -31,16 +18,30 @@ span{
     text-decoration: none;
     font-size: 17px;
     color: black;
-    padding-left: 10px;
     font-weight: bold;
+
+    padding: 20px;
 }
 
 .menu a:hover{
     color: skyblue;
 }
 
-.body{
-    margin-top: 55px;
+.menu-each{
+    position: relative;
+}
+
+.menu-each:hover > div{
+    visibility: visible;
+}
+
+.menu-each > div{
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
 }
 
 .complain{
@@ -50,6 +51,15 @@ span{
 
     padding-left: 20px;
     color: white;
+}
+
+.complain span{
+    display: block;
+    width: auto;
+}
+
+.complain p{
+    font-weight: bold;
 }
 
 .complain > div{

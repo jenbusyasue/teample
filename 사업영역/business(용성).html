@@ -11,9 +11,23 @@
         * {
             margin: 0;
             padding: 0;
-            border: 0;
+
         }
-       
+
+        .box {
+
+            padding-left: 30%;
+            padding-right: 30%;
+            justify-content: center;
+            border: 3px solid red;
+
+        }
+        .body-2 {
+            border: 1px solid blue;
+            justify-content: center;
+            
+            text-align: justify;
+        }
         /* 배너 */
         .body-2 {
             border: 1px solid blue;
@@ -96,13 +110,7 @@
 
         }
 
-        .box {
 
-            padding-left: 27%;
-            padding-right: 27%;
-            justify-content: center;
-            
-        }
 
         /* 슬라이드 */
         .slider {
@@ -206,6 +214,8 @@
         }
 
         .icon-header {
+            border: 0.5px solid black;
+
             justify-content: space-around;
             width: 50%;
             padding: 20px;
@@ -222,15 +232,19 @@
         }
 
         .bound {
-            height: 800px;
+            height: 1000px;
+            width: 1000px;
             border: 1px dotted green;
+
+
         }
 
         .pic-con {
-            display: flex;
-            justify-content: space-around;
-
-            height: calc(100%/2);
+            display: inline-block;
+            width: 150px;
+            height: 125px;
+            margin: 2px;
+            overflow: hidden;
             border: 1px solid red;
         }
 
@@ -238,13 +252,17 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            height: 400px;
+            height: 600px;
             width: calc(100%/3);
+            border: 1px solid yellow;
         }
 
         .pic-con img {
             height: 260px;
-            object-fit: cover;
+
+            justify-content: space-around;
+            text-align: center;
+
 
         }
 
@@ -360,14 +378,16 @@
                         <span>주요실적</span><br>
                         <div class="line-2"></div><br>
                     </div>
-                    <div class="bound">
-                        <div class="pic-con">
-                            <div class="pic-sum">
+                    <div class="side">
+                        <div class="bound">
+                            <div class="pic-con">
+                                <div class="pic-sum">
                                     <div class="image">
                                         <img src="./resources/img/main/bu1.jpg" alt="">
                                     </div>
                                     <div class="textbox">
-                                        <span>한국은행 통합별관
+                                        <span>
+                                            한국은행 통합별관<br>
                                             위치 : 서울특별시 중구 남대문로 39 <br>
                                             규모 : ○ 대지면적 : 22,327㎡(6,754평) <br>
                                             ○ 연 면 적 : 97,930㎡(29,624평) <br>
@@ -409,8 +429,8 @@
                                         </span>
                                     </div>
                                 </div>
-                            </div> 
-                        
+                            </div>
+
                             <div class="pic-con">
 
                                 <div class="pic-sum">
@@ -464,7 +484,7 @@
         </div>
     </div>
 </div>
-<!-- last layer
+<!-- last layer -->
 <div class="complain">
     <div>
         <p>CONTACT US</p>

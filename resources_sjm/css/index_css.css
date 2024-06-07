@@ -1,6 +1,7 @@
 /* 고정 layer */
 div{
     border: 1px solid black;
+    position: relative;
 }
 
 p{
@@ -9,6 +10,7 @@ p{
 
 span{
     display: block;
+    width: auto;
 }
 
 .navigation{
@@ -27,9 +29,10 @@ span{
 
 .menu a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
     color: black;
     padding-left: 10px;
+    font-weight: bold;
 }
 
 .menu a:hover{
@@ -42,23 +45,15 @@ span{
 
 .complain{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: #222;
 
     padding-left: 20px;
     color: white;
 }
 
-.complain > div:nth-child(1){
-    width: 20%;
-}
-
-.complain > div:nth-child(2){
-    width: 20%;
-}
-
-.complain > div:nth-child(3){
-    width: 60%;
+.complain > div{
+    padding: 30px;
 }
 
 .last{

@@ -13,11 +13,7 @@
             padding: 0;
             border: 0;
         }
-
-        div {
-            border: 0.5px solid red;
-        }
-
+       
         /* 배너 */
         .body-2 {
             border: 1px solid blue;
@@ -102,10 +98,10 @@
 
         .box {
 
-            padding-left:27%;
+            padding-left: 27%;
             padding-right: 27%;
             justify-content: center;
-            border: 1px dotted green;
+            
         }
 
         /* 슬라이드 */
@@ -225,32 +221,37 @@
             width: 100%;
         }
 
-        .pic-sum {
-            margin: auto;
-            display: block;
-            justify-content: center;
+        .bound {
+            height: 800px;
+            border: 1px dotted green;
         }
 
-        .pic {
-            
+        .pic-con {
+            display: flex;
+            justify-content: space-around;
+
+            height: calc(100%/2);
+            border: 1px solid red;
         }
 
         .pic-sum {
             display: flex;
-            align-items: center;
             flex-direction: column;
-            justify-content: start;
-            height: 350px;
+            justify-content: space-around;
+            height: 400px;
             width: calc(100%/3);
         }
 
-        .pic-sum img {
-            height: 200px;
+        .pic-con img {
+            height: 260px;
             object-fit: cover;
+
         }
-        .pic-con{
+
+        .pic-sum>.textbox {
+            height: 400px;
             display: flex;
-            align-items: end;
+            justify-content: center;
         }
     </style>
 </head>
@@ -339,36 +340,33 @@
                     <div lass="list">공공주택</div>
                 </div>
             </div>
-
-
             <div class="footer">
                 <div class="letter-2">
                     <div><span class="biz">건축사업</span><br></div>
 
                     <p>계룡건설은 지난 40년 동안 공공건물, Intelligent빌딩, 교육/의료시설, 문화/스포츠 시설, 공동주택 등 다양한 용도의 건물을 건축하면서 축적된
-                        경험,우수한 기술력 및 탁월한<br> 시공력과 경쟁력을 바탕으로 건축물의 새로운 이미지를 창조하고 인류의 역사속에 기억될 건축물을 건립하여 새로운 도시풍경을 제시하고 있으며,
+                        경험,우수한 기술력 및 탁월한<br> 시공력과 경쟁력을 바탕으로 건축물의 새로운 이미지를 창조하고 인류의 역사속에 기억될 건축물을 건립하여 새로운 도시풍경을 제시하고
+                        있으며,
                         '책임을 다하는 기업'이라는<br> 슬로건 아래 치열한 건설환경 속에서 업계 최고가 되기 위한 노력을 하고 있습니다.<br>
 
                         공공건물의 건설을 위해서는 역사성, 문화성, 기능성과 효용성을 모두 고려하는 치밀한 사전 계획과 장기적인 마스터플랜이 필요합니다. 계룡건설은
                         대전시청사, 대덕연구단지내<br> 원자력 안전기술원 청사, 대전법원, 종합청사 등 다년간 공공건물 공사를 수행하면서 획득한 기술력과 경험을 토대로 건물의 성격을 정확히
                         이해하고 사업을 추친함으로써 공공건물의<br> 새로운 이미지를 창조하고 있습니다.
                     </p>
+                    <br><br>
                 </div>
                 <div class="foot">
                     <div>
-                        <p><span>주요실적</span></p>
-
-                        <div class="line-2"></div>
-
+                        <span>주요실적</span><br>
+                        <div class="line-2"></div><br>
                     </div>
-                    <div>
-                        <div class="pic">
-                            <div class="pic-con">
-                                <div class="pic-sum">
+                    <div class="bound">
+                        <div class="pic-con">
+                            <div class="pic-sum">
                                     <div class="image">
                                         <img src="./resources/img/main/bu1.jpg" alt="">
                                     </div>
-                                    <div>
+                                    <div class="textbox">
                                         <span>한국은행 통합별관
                                             위치 : 서울특별시 중구 남대문로 39 <br>
                                             규모 : ○ 대지면적 : 22,327㎡(6,754평) <br>
@@ -384,7 +382,7 @@
                                     <div class="image">
                                         <img src="./resources/img/main/bu2.jpg" alt="">
                                     </div>
-                                    <div>
+                                    <div class="textbox">
                                         <span>
                                             안성 바우덕이 복합휴게시설 <br>
                                             위치 : 경기도 안성리 고삼면 봉산리,삼은리 일원 <br>
@@ -399,7 +397,7 @@
                                     <div class="image">
                                         <img src="./resources/img/main/bu3.jpg" alt="">
                                     </div>
-                                    <div>
+                                    <div class="textbox">
                                         <span>
                                             KT 서울중앙지사 호텔복합시설 <br>
                                             위치 : 서울 중구 충무로1가 21-17,21-2 <br>
@@ -411,15 +409,15 @@
                                         </span>
                                     </div>
                                 </div>
-                            </div>
-
+                            </div> 
+                        
                             <div class="pic-con">
 
                                 <div class="pic-sum">
                                     <div class="image">
                                         <img src="./resources/img/main/bu4.jpg" alt="">
                                     </div>
-                                    <div>
+                                    <div class="textbox">
                                         <span>국가정보자원관리원 공주센터 <br>
                                             위치 : 충청남도 공주시 사곡면 계실길 348-21 산 14-77 <br>
                                             규모 : ○ 부 지 : 223,000㎡ (67,457평) <br>
@@ -434,7 +432,7 @@
                                     <div class="image">
                                         <img src="./resources/img/main/bu5.jpg" alt="">
                                     </div>
-                                    <div>
+                                    <div class="textbox">
                                         <span>판교 제2 테크노밸리(G3-2) 인터파크 사옥 <br>
                                             위치 : 판교 제2 테크노밸리 G3-2블럭 <br>
                                             규모 : ○ 연면적 : 64,393.75㎡ (19,479평) <br>
@@ -448,7 +446,7 @@
                                     <div class="image">
                                         <img src="./resources/img/main/bu6.jpg" alt="">
                                     </div>
-                                    <div>
+                                    <div class="textbox">
                                         <span>세종 충남대학교병원 <br>
                                             위치 : 세종특별자치시 도담동 <br>
                                             규모 : ○ 대지면적 : 35,261㎡ (10,666평) <br>
@@ -459,7 +457,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -467,7 +464,7 @@
         </div>
     </div>
 </div>
-<!-- last layer -->
+<!-- last layer
 <div class="complain">
     <div>
         <p>CONTACT US</p>

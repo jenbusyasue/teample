@@ -7,6 +7,103 @@
     <title>사업영역</title>
     <link rel="stylesheet" href="./resources_lys/css/index_css.css">
     <style>
+        .bigbox {
+            border: 1px solid yellow;
+        }
+
+        .box {
+            border: 1px solid red;
+            justify-content: center;
+
+        }
+
+        .lefttbox {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+
+            border: 3px solid rgb(0, 0, 0);
+        }
+
+        .rightbox {
+            border: 3px solid rgb(0, 0, 0);
+        }
+
+        .minibox {
+            border: 1px solid rgb(254, 0, 0);
+        }
+
+        div {
+            border: 0px solid black;
+            position: relative;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        span {
+            display: block;
+        }
+
+        .navigation {
+            position: fixed;
+            display: flex;
+            justify-content: space-around;
+            top: 0;
+            background-color: white;
+            width: 100%;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu a {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            padding-left: 10px;
+        }
+
+        .menu a:hover {
+            color: skyblue;
+        }
+
+        .body {
+            margin-top: 55px;
+        }
+
+        .complain {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #222;
+
+            padding-left: 20px;
+            color: white;
+        }
+
+        .complain>div:nth-child(1) {
+            width: 20%;
+        }
+
+        .complain>div:nth-child(2) {
+            width: 20%;
+        }
+
+        .complain>div:nth-child(3) {
+            width: 60%;
+        }
+
+        .last {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            color: white;
+        }
+
         /* 배너 */
         .body-2 {
 
@@ -86,6 +183,7 @@
 
         /* 슬라이드 */
         .slider {
+            border: 1px solid yellowgreen;
             width: 1140px;
             height: 580px;
             position: relative;
@@ -185,10 +283,14 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
+            left: 100px;
+            right: 100px;
+            border: 1px solid red;
 
         }
 
         .icon {
+            border: 1px solid blue;
             margin: 10px;
             padding: 10px;
 
@@ -243,39 +345,64 @@
 
 
         /* foot img */
-        .pic-con {
+        .pic {
             display: flex;
+            justify-content: center;
 
-            width: 300px;
-            height: 300px;
-            margin: 2px;
-            overflow: hidden;
+            border: 1px solid red;
+        }
+
+        ul .pic-con {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            flex-direction: row;
             border: 1px solid red;
         }
 
         .pic-sum {
+            overflow: hidden;
+            border: 1px solid red;
+        }
+
+        .pic-sum>:nth-child(1) {
+            position: relative;
+            height: 70%;
+        }
+
+        .pic-sum>:nth-child(2) {
+            padding-left: 10px;
+
+        }
+
+        .image {
+
             display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            height: 600px;
-            width: calc(100%/3);
-
+            object-fit: cover;
         }
 
-        .pic-con img {
-            height: 260px;
-            justify-content: space-around;
-            text-align: center;
-        }
-
-        .pic-sum>.textbox {
+        .image img {
+            width: 700px;
             height: 400px;
-            display: flex;
-            justify-content: center;
+
+
+
+        }
+
+        .textbox {
+            border: 1px solid red;
         }
     </style>
 </head>
-<div>
+<body>
+<div class="bigbox">
+    <div class="leftbox">
+        <p>name</p>
+    </div>
+    <div class="rightbox">
+        <p>name</p>
+    </div>
+
     <div class="body">
         <!-- 공용 레이어(top) -->
         <div class="navigation">
@@ -294,6 +421,7 @@
         </div>
     </div>
     <!-- body -->
+    <div></div>
     <div class="banner">
         <img src="./resources_lys/img/intro/int.jpg" alt="" width="100%">
         <span class="text">사업영역</span>
@@ -311,93 +439,115 @@
         </div>
         <!-- 슬라이더 -->
         <div class="box">
-            <div class="slider">
-                <input type="radio" name="slide" id="slide1" checked>
-                <input type="radio" name="slide" id="slide2">
-                <input type="radio" name="slide" id="slide3">
-                <input type="radio" name="slide" id="slide4">
-                <ul id="imgholder" class="imgs">
-                    <li><img src="./resources_lys/img/header/b1_1.jpg">
-                        <div class="text">한국은행 통합별관</div>
-                    </li>
-                    <li><img src="./resources_lys/img/header/b1_2.jpg">
-                        <div class="text">안성 바우덕이 휴게소</div>
-                    </li>
-                    <li><img src="./resources_lys/img/header/b1_3.jpg">
-                        <div class="text">대전 베이스볼 드림파크</div>
-                    </li>
-                    <li><img src="./resources_lys/img/header/b1_4.jpg">
-                        <div class="text">강릉 아이스 아레나</div>
-                    </li>
-                </ul>
-                <div class="bullets">
-                    <label for="slide1">&nbsp;</label>
-                    <label for="slide2">&nbsp;</label>
-                    <label for="slide3">&nbsp;</label>
-                    <label for="slide4">&nbsp;</label>
+            <div class="minibox">
+                <div class="slider">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+                    <ul id="imgholder" class="imgs">
+                        <li><img src="./resources_lys/img/header/b1_1.jpg">
+                            <div class="text">한국은행 통합별관</div>
+                        </li>
+                        <li><img src="./resources_lys/img/header/b1_2.jpg">
+                            <div class="text">안성 바우덕이 휴게소</div>
+                        </li>
+                        <li><img src="./resources_lys/img/header/b1_3.jpg">
+                            <div class="text">대전 베이스볼 드림파크</div>
+                        </li>
+                        <li><img src="./resources_lys/img/header/b1_4.jpg">
+                            <div class="text">강릉 아이스 아레나</div>
+                        </li>
+                    </ul>
+                    <div class="bullets">
+                        <label for="slide1">&nbsp;</label>
+                        <label for="slide2">&nbsp;</label>
+                        <label for="slide3">&nbsp;</label>
+                        <label for="slide4">&nbsp;</label>
+                    </div>
                 </div>
-            </div>
+                <!-- 아이콘 -->
+                <div class="icon-header">
+                    <div class="icon">
+                        <div class="container">
+                            <img src="resources_lys/img/icon/건물.png">
+                        </div>
+                        <div>
+                            <p>공공건물</p>
+                        </div>
 
-
-
-            <!-- 아이콘 -->
-            <div class="icon-header">
-                <div class="icon">
-                    <div class="container">
-                        <img src="resources_lys/img/icon/건물.png">
                     </div>
-                    <div>
-                        <p>공공건물</p>
-                    </div>
+                    <div class="icon">
+                        <div class="container">
+                            <img src="resources_lys/img/icon/휴양.png">
+                        </div>
+                        <div>
+                            <p>상업빌딩.휴게시설</p>
+                        </div>
 
-                </div>
-                <div class="icon">
-                    <div class="container">
-                        <img src="resources_lys/img/icon/휴양.png">
-                    </div>
-                    <div>
-                        <p>상업빌딩.휴게시설</p>
                     </div>
 
-                </div>
+                    <div class="icon">
+                        <div class="container">
+                            <img src="resources_lys/img/icon/교육.png">
+                        </div>
+                        <div>
+                            <p>교육.의료시설</p>
+                        </div>
 
-                <div class="icon">
-                    <div class="container">
-                        <img src="resources_lys/img/icon/교육.png">
-                    </div>
-                    <div>
-                        <p>교육.의료시설</p>
-                    </div>
-
-                </div>
-
-                <div class="icon">
-                    <div class="container">
-                        <img src="resources_lys/img/icon/스포츠.png">
-                    </div>
-                    <div>
-                        <p>문화.스포츠시설</p>
                     </div>
 
-                </div>
+                    <div class="icon">
+                        <div class="container">
+                            <img src="resources_lys/img/icon/스포츠.png">
+                        </div>
+                        <div>
+                            <p>문화.스포츠시설</p>
+                        </div>
 
-                <div class="icon">
-                    <div class="container">
-                        <img src="resources_lys/img/icon/공공.png">
                     </div>
-                    <div>
-                        <p>공공주택</p>
+
+                    <div class="icon">
+                        <div class="container">
+                            <img src="resources_lys/img/icon/공공.png">
+                        </div>
+                        <div>
+                            <p>공공주택</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <br><br>
             <div>
-                <hr>
+                <div>
+                    <hr>
+                </div>
             </div>
         </div>
-        <div class="caption">
-            <span>주요실적</span><br>
-            <div class="line-2"></div><br>
+
+        <!-- letter 2 -->
+        <div class="lette2">
+            <div class="footer">
+                <div class="letter-2">
+                    <div><span class="biz">건축사업</span><br></div>
+
+                    <p>계룡건설은 지난 40년 동안 공공건물, Intelligent빌딩, 교육/의료시설, 문화/스포츠 시설, 공동주택 등 다양한 용도의 건물을 건축하면서 축적된
+                        경험,우수한 기술력 및 탁월한<br> 시공력과 경쟁력을 바탕으로 건축물의 새로운 이미지를 창조하고 인류의 역사속에 기억될 건축물을 건립하여 새로운 도시풍경을 제시하고
+                        있으며,
+                        '책임을 다하는 기업'이라는<br> 슬로건 아래 치열한 건설환경 속에서 업계 최고가 되기 위한 노력을 하고 있습니다.<br>
+
+                        공공건물의 건설을 위해서는 역사성, 문화성, 기능성과 효용성을 모두 고려하는 치밀한 사전 계획과 장기적인 마스터플랜이 필요합니다. 계룡건설은
+                        대전시청사, 대덕연구단지내<br> 원자력 안전기술원 청사, 대전법원, 종합청사 등 다년간 공공건물 공사를 수행하면서 획득한 기술력과 경험을 토대로 건물의 성격을
+                        정확히
+                        이해하고 사업을 추친함으로써 공공건물의<br> 새로운 이미지를 창조하고 있습니다.
+                    </p>
+                    <br><br>
+                </div>
+            </div>
+            <div class="caption">
+                <span>주요실적</span><br>
+                <div class="line-2"></div><br>
+            </div>
         </div>
         <!-- 사진설명 -->
         <div class="pic">
@@ -418,7 +568,9 @@
                         </p>
                     </div>
                 </li>
-                <div class="pic-sum">
+            </ul>
+            <ul class="pic-con">
+                <li class="pic-sum">
                     <div class="image">
                         <img src="./resources_lys/img/main/bu2.jpg" alt="">
                     </div>
@@ -432,110 +584,113 @@
                             발주처 : 한국도로공사 <br>
                         </p>
                     </div>
-                </div>
-                <div class="pic-sum">
+                </li>
+            </ul>
+            <ul class="pic-con">
+                <li class="pic-sum">
                     <div class="image">
                         <img src="./resources_lys/img/main/bu3.jpg" alt="">
                     </div>
-                    <div>
-                        <div class="textbox">
-                            <p>
-                                KT 서울중앙지사 호텔복합시설 <br>
-                                위치 : 서울 중구 충무로1가 21-17,21-2 <br>
-                                규모 : ○ 대지면적 : 3,908㎡ (1,184평) <br>
-                                ○ 연 면 적 : 42,702㎡ (12,917평) <br>
-                                ○ 규 모 : 지하5층~지상15층 <br>
-                                ○ 용 도 : 호텔(411실), 판매시설, 문화 및 집회시설 <br>
-                                발주처 : 주식회사케이티 <br>
-                            </p>
-                        </div>
+                    <div class="textbox">
+                        <p>
+                            KT 서울중앙지사 호텔복합시설 <br>
+                            위치 : 서울 중구 충무로1가 21-17,21-2 <br>
+                            규모 : ○ 대지면적 : 3,908㎡ (1,184평) <br>
+                            ○ 연 면 적 : 42,702㎡ (12,917평) <br>
+                            ○ 규 모 : 지하5층~지상15층 <br>
+                            ○ 용 도 : 호텔(411실), 판매시설, 문화 및 집회시설 <br>
+                            발주처 : 주식회사케이티 <br>
+                        </p>
                     </div>
-                </div>
-                <div class="pic-con">
-                    <div class="pic-sum">
-                        <div class="image">
-                            <img src="./resources_lys/img/main/bu4.jpg" alt="">
-                        </div>
-                        <div class="textbox">
-                            <span>국가정보자원관리원 공주센터 <br>
-                                위치 : 충청남도 공주시 사곡면 계실길 348-21 산 14-77 <br>
-                                규모 : ○ 부 지 : 223,000㎡ (67,457평) <br>
-                                ○ 연 면 적 : 16,178㎡ (4,902평) <br>
-                                ○ 규 모 : 관리동(지상3층), 전산동(3개층), 터널 915m <br>
-                                발주처 : 행정안전부 <br>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
+                </li>
             </ul>
-            <div class="pic-sum">
-                <div class="image">
-                    <img src="resources_lys/img/main/bu5.jpg" alt="">
-                </div>
-                <div class="textbox">
-                    <p>판교 제2 테크노밸리(G3-2) 인터파크 사옥 <br>
-                        위치 : 판교 제2 테크노밸리 G3-2블럭 <br>
-                        규모 : ○ 연면적 : 64,393.75㎡ (19,479평) <br>
-                        ○ 규 모 : 지하5층~지상14층 <br>
-                        ○ 용 도 : 업무시설 <br>
-                        발주처 : 주식회사 인터파크트리플 <br>
-                    </p>
-                </div>
-            </div>
+            <ul class="pic-con">
+                <li class="pic-sum">
+                    <div class="image">
+                        <img src="./resources_lys/img/main/bu4.jpg" alt="">
+                    </div>
+                    <div class="textbox">
+                        <span>국가정보자원관리원 공주센터 <br>
+                            위치 : 충청남도 공주시 사곡면 계실길 348-21 산 14-77 <br>
+                            규모 : ○ 부 지 : 223,000㎡ (67,457평) <br>
+                            ○ 연 면 적 : 16,178㎡ (4,902평) <br>
+                            ○ 규 모 : 관리동(지상3층), 전산동(3개층), 터널 915m <br>
+                            발주처 : 행정안전부 <br>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pic-con">
+                <li class="pic-sum">
+                    <div class="image">
+                        <img src="resources_lys/img/main/bu5.jpg" alt="">
+                    </div>
+                    <div class="textbox">
+                        <p>판교 제2 테크노밸리(G3-2) 인터파크 사옥 <br>
+                            위치 : 판교 제2 테크노밸리 G3-2블럭 <br>
+                            규모 : ○ 연면적 : 64,393.75㎡ (19,479평) <br>
+                            ○ 규 모 : 지하5층~지상14층 <br>
+                            ○ 용 도 : 업무시설 <br>
+                            발주처 : 주식회사 인터파크트리플 <br>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pic-con">
+                <li class="pic-sum">
+                    <div class="image">
+                        <img src="resources_lys/img/main/bu6.jpg" alt="">
+                    </div>
+                    <div class="textbox">
+                        <p>세종 충남대학교병원 <br>
+                            위치 : 세종특별자치시 도담동 <br>
+                            규모 : ○ 대지면적 : 35,261㎡ (10,666평) <br>
+                            ○ 연 면 적 : 83,358㎡ (25,215평) <br>
+                            ○ 규 모 : 지하3층~지상11층, 527병상 <br>
+                            발주처 : 충남대학교병원 <br>
+                        </p>
+                    </div>
+                </li>
+            </ul>
         </div>
 
-        <div class="pic-sum">
-            <div class="image">
-                <img src="resources_lys/img/main/bu6.jpg" alt="">
-            </div>
-            <div class="textbox">
-                <p>세종 충남대학교병원 <br>
-                    위치 : 세종특별자치시 도담동 <br>
-                    규모 : ○ 대지면적 : 35,261㎡ (10,666평) <br>
-                    ○ 연 면 적 : 83,358㎡ (25,215평) <br>
-                    ○ 규 모 : 지하3층~지상11층, 527병상 <br>
-                    발주처 : 충남대학교병원 <br>
+
+        <!-- last layer -->
+        <div class="complain">
+            <div>
+                <p>CONTACT US</p>
+                <p><img width="150px"
+                        src="https://pds.saramin.co.kr/company/logo/202307/25/rybs5n_b48i-1mq885e_logo.jpg">
                 </p>
+                <span>
+                    <h4 style="color: blue; display: inline;">Tel</h4>
+                    :042-480-7114
+                </span>
+                <span>
+                    <h4 style="color: blue; display: inline;">Fax</h4>
+                    :042-486-1615
+                </span>
+                <span>대전광역시 서구 문정로 48번길, 48</span>
+            </div>
+            <div>
+                <p>QUICK MENU</p>
+                <span> * 인트라넷</span>
+                <span> * e-PS </span>
+                <span> * 개인정보처리방침</span>
+                <span> * 채용정보 </span>
+                <span> * 오시는 길</span>
+            </div>
+            <div>
+                <p>LINK</p>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
             </div>
         </div>
+        <div class="last">© COPYRIGHT 2016. KYERYONG CONSTRUCTION INDUSTRIAL CO., LTD. ALL RIGHTS
+            RESERVED.
+        </div>
     </div>
-</div>
-
-<!-- last layer -->
-<div class="complain">
-    <div>
-        <p>CONTACT US</p>
-        <p><img width="150px" src="https://pds.saramin.co.kr/company/logo/202307/25/rybs5n_b48i-1mq885e_logo.jpg">
-        </p>
-        <span>
-            <h4 style="color: blue; display: inline;">Tel</h4>
-            :042-480-7114
-        </span>
-        <span>
-            <h4 style="color: blue; display: inline;">Fax</h4>
-            :042-486-1615
-        </span>
-        <span>대전광역시 서구 문정로 48번길, 48</span>
-    </div>
-    <div>
-        <p>QUICK MENU</p>
-        <span> * 인트라넷</span>
-        <span> * e-PS </span>
-        <span> * 개인정보처리방침</span>
-        <span> * 채용정보 </span>
-        <span> * 오시는 길</span>
-    </div>
-    <div>
-        <p>LINK</p>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-    </div>
-</div>
-<div class="last">© COPYRIGHT 2016. KYERYONG CONSTRUCTION INDUSTRIAL CO., LTD. ALL RIGHTS
-    RESERVED.
-</div>
 </body>
 
 </html>

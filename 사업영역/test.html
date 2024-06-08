@@ -6,36 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* foot img */
-        .pic-con {
+        .pic {
             display: flex;
+            justify-content: center;
+            
+            border: 1px solid red;
+        }
 
-            width: 300px;
-            height: 300px;
-            margin: 2px;
-            overflow: hidden;
+        ul .pic-con {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            flex-direction: row;
             border: 1px solid red;
         }
 
         .pic-sum {
+            overflow: hidden;
+            
+            border: 1px solid red;
+        }
+
+        .image {
+
             display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            height: 600px;
-            width: calc(100%/3);
-
+            object-fit: cover;
         }
 
-        .pic-con img {
-            height: 260px;
-            justify-content: space-around;
-            text-align: center;
-        }
-
-        .pic-sum>.textbox {
+        .image img {
+            width: 700px;
             height: 400px;
-            display: flex;
-            justify-content: center;
+            
+
+
+        }
+
+        .textbox {
+            border: 1px solid red;
         }
     </style>
 </head>
@@ -60,7 +67,7 @@
                     </p>
                 </div>
             </li>
-            <div class="pic-sum">
+            <li class="pic-sum">
                 <div class="image">
                     <img src="./resources_lys/img/main/bu2.jpg" alt="">
                 </div>
@@ -74,72 +81,66 @@
                         발주처 : 한국도로공사 <br>
                     </p>
                 </div>
-            </div>
-            <div class="pic-sum">
+            </li>
+            <li class="pic-sum">
                 <div class="image">
                     <img src="./resources_lys/img/main/bu3.jpg" alt="">
                 </div>
-                <div>
-                    <div class="textbox">
-                        <p>
-                            KT 서울중앙지사 호텔복합시설 <br>
-                            위치 : 서울 중구 충무로1가 21-17,21-2 <br>
-                            규모 : ○ 대지면적 : 3,908㎡ (1,184평) <br>
-                            ○ 연 면 적 : 42,702㎡ (12,917평) <br>
-                            ○ 규 모 : 지하5층~지상15층 <br>
-                            ○ 용 도 : 호텔(411실), 판매시설, 문화 및 집회시설 <br>
-                            발주처 : 주식회사케이티 <br>
-                        </p>
-                    </div>
+                <div class="textbox">
+                    <p>
+                        KT 서울중앙지사 호텔복합시설 <br>
+                        위치 : 서울 중구 충무로1가 21-17,21-2 <br>
+                        규모 : ○ 대지면적 : 3,908㎡ (1,184평) <br>
+                        ○ 연 면 적 : 42,702㎡ (12,917평) <br>
+                        ○ 규 모 : 지하5층~지상15층 <br>
+                        ○ 용 도 : 호텔(411실), 판매시설, 문화 및 집회시설 <br>
+                        발주처 : 주식회사케이티 <br>
+                    </p>
                 </div>
-            </div>
-            <div class="pic-con">
-                <div class="pic-sum">
-                    <div class="image">
-                        <img src="./resources_lys/img/main/bu4.jpg" alt="">
-                    </div>
-                    <div class="textbox">
-                        <span>국가정보자원관리원 공주센터 <br>
-                            위치 : 충청남도 공주시 사곡면 계실길 348-21 산 14-77 <br>
-                            규모 : ○ 부 지 : 223,000㎡ (67,457평) <br>
-                            ○ 연 면 적 : 16,178㎡ (4,902평) <br>
-                            ○ 규 모 : 관리동(지상3층), 전산동(3개층), 터널 915m <br>
-                            발주처 : 행정안전부 <br>
-                        </span>
-                    </div>
+            </li>
+            <li class="pic-sum">
+                <div class="image">
+                    <img src="./resources_lys/img/main/bu4.jpg" alt="">
                 </div>
-            </div>
-
+                <div class="textbox">
+                    <span>국가정보자원관리원 공주센터 <br>
+                        위치 : 충청남도 공주시 사곡면 계실길 348-21 산 14-77 <br>
+                        규모 : ○ 부 지 : 223,000㎡ (67,457평) <br>
+                        ○ 연 면 적 : 16,178㎡ (4,902평) <br>
+                        ○ 규 모 : 관리동(지상3층), 전산동(3개층), 터널 915m <br>
+                        발주처 : 행정안전부 <br>
+                    </span>
+                </div>
+            </li>
+            <li class="pic-sum">
+                <div class="image">
+                    <img src="resources_lys/img/main/bu5.jpg" alt="">
+                </div>
+                <div class="textbox">
+                    <p>판교 제2 테크노밸리(G3-2) 인터파크 사옥 <br>
+                        위치 : 판교 제2 테크노밸리 G3-2블럭 <br>
+                        규모 : ○ 연면적 : 64,393.75㎡ (19,479평) <br>
+                        ○ 규 모 : 지하5층~지상14층 <br>
+                        ○ 용 도 : 업무시설 <br>
+                        발주처 : 주식회사 인터파크트리플 <br>
+                    </p>
+                </div>
+            </li>
+            <li class="pic-sum">
+                <div class="image">
+                    <img src="resources_lys/img/main/bu6.jpg" alt="">
+                </div>
+                <div class="textbox">
+                    <p>세종 충남대학교병원 <br>
+                        위치 : 세종특별자치시 도담동 <br>
+                        규모 : ○ 대지면적 : 35,261㎡ (10,666평) <br>
+                        ○ 연 면 적 : 83,358㎡ (25,215평) <br>
+                        ○ 규 모 : 지하3층~지상11층, 527병상 <br>
+                        발주처 : 충남대학교병원 <br>
+                    </p>
+                </div>
+            </li>
         </ul>
-        <div class="pic-sum">
-            <div class="image">
-                <img src="resources_lys/img/main/bu5.jpg" alt="">
-            </div>
-            <div class="textbox">
-                <p>판교 제2 테크노밸리(G3-2) 인터파크 사옥 <br>
-                    위치 : 판교 제2 테크노밸리 G3-2블럭 <br>
-                    규모 : ○ 연면적 : 64,393.75㎡ (19,479평) <br>
-                    ○ 규 모 : 지하5층~지상14층 <br>
-                    ○ 용 도 : 업무시설 <br>
-                    발주처 : 주식회사 인터파크트리플 <br>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="pic-sum">
-        <div class="image">
-            <img src="resources_lys/img/main/bu6.jpg" alt="">
-        </div>
-        <div class="textbox">
-            <p>세종 충남대학교병원 <br>
-                위치 : 세종특별자치시 도담동 <br>
-                규모 : ○ 대지면적 : 35,261㎡ (10,666평) <br>
-                ○ 연 면 적 : 83,358㎡ (25,215평) <br>
-                ○ 규 모 : 지하3층~지상11층, 527병상 <br>
-                발주처 : 충남대학교병원 <br>
-            </p>
-        </div>
     </div>
 </body>
 

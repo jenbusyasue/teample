@@ -7,8 +7,9 @@
     <title>사업영역</title>
     <link rel="stylesheet" href="./resources_lys/css/index_css.css">
     <style>
+        /* 테두리 */
         .bigbox {
-            border: 1px solid yellow;
+            border: 1px solid rgb(0, 0, 0);
         }
 
         .box {
@@ -33,7 +34,7 @@
         .minibox {
             border: 1px solid rgb(254, 0, 0);
         }
-
+        /* css */
         div {
             border: 0px solid black;
             position: relative;
@@ -177,9 +178,28 @@
             width: 30px;
             margin-left: 10px;
         }
+        img {
+            margin: auto;
+            display: block;
 
+        }
 
+        .box {
 
+            padding-left: 27%;
+            padding-right: 27%;
+            justify-content: center;
+            
+        }
+
+        .message{
+            margin-top: 0;
+            padding-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 300;
+        }
 
         /* 슬라이드 */
         .slider {
@@ -282,11 +302,11 @@
         .icon-header {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-around;
             left: 100px;
             right: 100px;
             border: 1px solid red;
-
+            
         }
 
         .icon {
@@ -304,7 +324,7 @@
         }
 
         .container img {
-
+            justify-content: space-around;
             width: 30px;
 
         }
@@ -345,10 +365,15 @@
 
 
         /* foot img */
+        .big-pic{
+            width: 100%;
+            border: 2px solid red;
+
+
+        }
         .pic {
             display: flex;
-            justify-content: center;
-
+            justify-content: center;            
             border: 1px solid red;
         }
 
@@ -382,8 +407,8 @@
         }
 
         .image img {
-            width: 700px;
-            height: 400px;
+            width: 200px;
+            height: 300px;
 
 
 
@@ -402,7 +427,6 @@
     <div class="rightbox">
         <p>name</p>
     </div>
-
     <div class="body">
         <!-- 공용 레이어(top) -->
         <div class="navigation">
@@ -436,6 +460,13 @@
             <p><span class="pa">건축</span></p>
             <br>
             <br>
+        </div>
+        <div class="message">
+            <p>
+                공공건물에서 문화·스포츠 시설에 이르기까지 각 분야의 특성을 고려하여 기능성, 예술성, 효용성을 극대화한<br>
+                건축물을 선보이고 있는 계룡건설, 그 어느 곳에서도 랜드마크가 되는 건축 명작으로 고객의 감동을 극대화하고<br>
+                있습니다.
+            </p>
         </div>
         <!-- 슬라이더 -->
         <div class="box">
@@ -550,109 +581,112 @@
             </div>
         </div>
         <!-- 사진설명 -->
-        <div class="pic">
-            <ul class="pic-con">
-                <li class="pic-sum">
-                    <div class="image">
-                        <img src="./resources_lys/img/main/bu1.jpg" alt="">
-                    </div>
-                    <div class="textbox">
-                        <p>
-                            한국은행 통합별관<br>
-                            위치 : 서울특별시 중구 남대문로 39 <br>
-                            규모 : ○ 대지면적 : 22,327㎡(6,754평) <br>
-                            ○ 연 면 적 : 97,930㎡(29,624평) <br>
-                            ○ 규 모 : 지하4층 ~ 지상16층 <br>
-                            ○ 주요시설 : 업무시설 <br>
-                            발주처 : 한국은행 <br>
-                        </p>
-                    </div>
-                </li>
-            </ul>
-            <ul class="pic-con">
-                <li class="pic-sum">
-                    <div class="image">
-                        <img src="./resources_lys/img/main/bu2.jpg" alt="">
-                    </div>
-                    <div class="textbox">
-                        <p>
-                            안성 바우덕이 복합휴게시설 <br>
-                            위치 : 경기도 안성리 고삼면 봉산리,삼은리 일원 <br>
-                            규모 : ○ 부지면적 : 186,000㎡ (56,265평) <br>
-                            ○ 연 면 적 : 21,397㎡ (6,473평) <br>
-                            ○ 사업규모 : 지하1층~지상3층, 주차대수 921대(상행 447대, 하행 474대) <br>
-                            발주처 : 한국도로공사 <br>
-                        </p>
-                    </div>
-                </li>
-            </ul>
-            <ul class="pic-con">
-                <li class="pic-sum">
-                    <div class="image">
-                        <img src="./resources_lys/img/main/bu3.jpg" alt="">
-                    </div>
-                    <div class="textbox">
-                        <p>
-                            KT 서울중앙지사 호텔복합시설 <br>
-                            위치 : 서울 중구 충무로1가 21-17,21-2 <br>
-                            규모 : ○ 대지면적 : 3,908㎡ (1,184평) <br>
-                            ○ 연 면 적 : 42,702㎡ (12,917평) <br>
-                            ○ 규 모 : 지하5층~지상15층 <br>
-                            ○ 용 도 : 호텔(411실), 판매시설, 문화 및 집회시설 <br>
-                            발주처 : 주식회사케이티 <br>
-                        </p>
-                    </div>
-                </li>
-            </ul>
-            <ul class="pic-con">
-                <li class="pic-sum">
-                    <div class="image">
-                        <img src="./resources_lys/img/main/bu4.jpg" alt="">
-                    </div>
-                    <div class="textbox">
-                        <span>국가정보자원관리원 공주센터 <br>
-                            위치 : 충청남도 공주시 사곡면 계실길 348-21 산 14-77 <br>
-                            규모 : ○ 부 지 : 223,000㎡ (67,457평) <br>
-                            ○ 연 면 적 : 16,178㎡ (4,902평) <br>
-                            ○ 규 모 : 관리동(지상3층), 전산동(3개층), 터널 915m <br>
-                            발주처 : 행정안전부 <br>
-                        </span>
-                    </div>
-                </li>
-            </ul>
-            <ul class="pic-con">
-                <li class="pic-sum">
-                    <div class="image">
-                        <img src="resources_lys/img/main/bu5.jpg" alt="">
-                    </div>
-                    <div class="textbox">
-                        <p>판교 제2 테크노밸리(G3-2) 인터파크 사옥 <br>
-                            위치 : 판교 제2 테크노밸리 G3-2블럭 <br>
-                            규모 : ○ 연면적 : 64,393.75㎡ (19,479평) <br>
-                            ○ 규 모 : 지하5층~지상14층 <br>
-                            ○ 용 도 : 업무시설 <br>
-                            발주처 : 주식회사 인터파크트리플 <br>
-                        </p>
-                    </div>
-                </li>
-            </ul>
-            <ul class="pic-con">
-                <li class="pic-sum">
-                    <div class="image">
-                        <img src="resources_lys/img/main/bu6.jpg" alt="">
-                    </div>
-                    <div class="textbox">
-                        <p>세종 충남대학교병원 <br>
-                            위치 : 세종특별자치시 도담동 <br>
-                            규모 : ○ 대지면적 : 35,261㎡ (10,666평) <br>
-                            ○ 연 면 적 : 83,358㎡ (25,215평) <br>
-                            ○ 규 모 : 지하3층~지상11층, 527병상 <br>
-                            발주처 : 충남대학교병원 <br>
-                        </p>
-                    </div>
-                </li>
-            </ul>
+        <div class="big-pic">
+            <div class="pic">
+                <ul class="pic-con">
+                    <li class="pic-sum">
+                        <div class="image">
+                            <img src="./resources_lys/img/main/bu1.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <p>
+                                한국은행 통합별관<br>
+                                위치 : 서울특별시 중구 남대문로 39 <br>
+                                규모 : ○ 대지면적 : 22,327㎡(6,754평) <br>
+                                ○ 연 면 적 : 97,930㎡(29,624평) <br>
+                                ○ 규 모 : 지하4층 ~ 지상16층 <br>
+                                ○ 주요시설 : 업무시설 <br>
+                                발주처 : 한국은행 <br>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="pic-con">
+                    <li class="pic-sum">
+                        <div class="image">
+                            <img src="./resources_lys/img/main/bu2.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <p>
+                                안성 바우덕이 복합휴게시설 <br>
+                                위치 : 경기도 안성리 고삼면 봉산리,삼은리 일원 <br>
+                                규모 : ○ 부지면적 : 186,000㎡ (56,265평) <br>
+                                ○ 연 면 적 : 21,397㎡ (6,473평) <br>
+                                ○ 사업규모 : 지하1층~지상3층, 주차대수 921대(상행 447대, 하행 474대) <br>
+                                발주처 : 한국도로공사 <br>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="pic-con">
+                    <li class="pic-sum">
+                        <div class="image">
+                            <img src="./resources_lys/img/main/bu3.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <p>
+                                KT 서울중앙지사 호텔복합시설 <br>
+                                위치 : 서울 중구 충무로1가 21-17,21-2 <br>
+                                규모 : ○ 대지면적 : 3,908㎡ (1,184평) <br>
+                                ○ 연 면 적 : 42,702㎡ (12,917평) <br>
+                                ○ 규 모 : 지하5층~지상15층 <br>
+                                ○ 용 도 : 호텔(411실), 판매시설, 문화 및 집회시설 <br>
+                                발주처 : 주식회사케이티 <br>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="pic-con">
+                    <li class="pic-sum">
+                        <div class="image">
+                            <img src="./resources_lys/img/main/bu4.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <span>국가정보자원관리원 공주센터 <br>
+                                위치 : 충청남도 공주시 사곡면 계실길 348-21 산 14-77 <br>
+                                규모 : ○ 부 지 : 223,000㎡ (67,457평) <br>
+                                ○ 연 면 적 : 16,178㎡ (4,902평) <br>
+                                ○ 규 모 : 관리동(지상3층), 전산동(3개층), 터널 915m <br>
+                                발주처 : 행정안전부 <br>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="pic-con">
+                    <li class="pic-sum">
+                        <div class="image">
+                            <img src="resources_lys/img/main/bu5.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <p>판교 제2 테크노밸리(G3-2) 인터파크 사옥 <br>
+                                위치 : 판교 제2 테크노밸리 G3-2블럭 <br>
+                                규모 : ○ 연면적 : 64,393.75㎡ (19,479평) <br>
+                                ○ 규 모 : 지하5층~지상14층 <br>
+                                ○ 용 도 : 업무시설 <br>
+                                발주처 : 주식회사 인터파크트리플 <br>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="pic-con">
+                    <li class="pic-sum">
+                        <div class="image">
+                            <img src="resources_lys/img/main/bu6.jpg" alt="">
+                        </div>
+                        <div class="textbox">
+                            <p>세종 충남대학교병원 <br>
+                                위치 : 세종특별자치시 도담동 <br>
+                                규모 : ○ 대지면적 : 35,261㎡ (10,666평) <br>
+                                ○ 연 면 적 : 83,358㎡ (25,215평) <br>
+                                ○ 규 모 : 지하3층~지상11층, 527병상 <br>
+                                발주처 : 충남대학교병원 <br>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
+       
 
 
         <!-- last layer -->
@@ -691,6 +725,7 @@
             RESERVED.
         </div>
     </div>
+</div>
 </body>
 
 </html>

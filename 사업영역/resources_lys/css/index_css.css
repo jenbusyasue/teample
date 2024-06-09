@@ -36,10 +36,8 @@ span{
     color: skyblue;
 }
 
-.body{
-    margin-top: 55px;
-}
 
+/* last layer */
 .complain{
     display: flex;
     justify-content: space-evenly;

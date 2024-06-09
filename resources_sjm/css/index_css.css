@@ -9,6 +9,14 @@
     width: 100%;
 }
 
+.navigation > a{
+    margin-left: 215px;
+}
+
+.navigation > div{
+    margin-right: 185px;
+}
+
 .menu{
     display: flex;
     align-items: center;
@@ -44,6 +52,15 @@
     visibility: hidden;
 }
 
+.menu-each > div > a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+
+    padding: 10px;
+}
+
 .complain{
     display: flex;
     justify-content: center;
@@ -64,6 +81,10 @@
 
 .complain > div{
     padding: 30px;
+}
+
+.line-margin{
+    margin-bottom: 18px;
 }
 
 .last{
